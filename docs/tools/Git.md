@@ -166,6 +166,11 @@ Git 有三种状态，你的文件可能处于其中之一：
 ```shell
 git log --author=bob
 ```
+也可以使用'git reflog' 查看各个提交版本的情况，包括各个版本的索引的哈希值以及现在处于哪个版本，同时配合上'gitreset--hard 版本索引哈希值'进行版本的前进后退。 
+```shell
+git reflog
+gitreset--hard 版本索引哈希值
+```
 
 ### 撤销操作
 
